@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+bool func(int a)
+{
+    cout << "Enter the number to check : ";
+    cin >> a;
+    // for (a%2) then 0- even ; 1- odd
+    //also if(a&1) then 0- odd ; 1- even
+    if (a % 2 == 0)
+    {
+        return 1;
+    }
+    return 0;
+}
+int main()
+{
+    int a;
+    if (func(a))
+    {
+        cout << "The number is Even. ";
+    }
+    else
+    {
+        cout << "The number is Odd. ";
+    }
+    return 0;
+};
