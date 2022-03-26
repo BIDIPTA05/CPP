@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+void counting(int arr[], int size)
+{
+    cout << "Printing the array" << endl;
+
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] <<" ";
+    }
+    cout << "Printing Done" << endl<<endl;
+}
+
+int main()
+{
+    int first[5] = {4, 5, 6, 3, 2};
+    cout << first[3] << endl;
+    cout << "Working fine" << endl;
+
+    int n = 10;
+    int second[10] = {7, 9};
+    counting(second, 10);
+
+    n = 5;
+    int third[5] = {6, 2};
+    counting(third, 5);
+
+    n = 7;
+    int forth[7] = {8, 9, 2};
+    counting(forth, 7);
+
+    n = 15;
+    int fifth[15] = {1, 2, 3, 4};
+    counting(fifth, 15);
+    cout << "Working fine";
+    return 0;
+}
