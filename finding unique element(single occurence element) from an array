@@ -9,16 +9,12 @@ void findUnique(int *arr, int size)
     cout<< ans;
 }
 
-
 int main(){
 
     int n;
 cout<<"The Unique element in the array is: "<<endl;
 
-
 int array[9]={2,3,1,1,9, 6, 3, 6, 2};
-
 findUnique(array, 9);
-
 return 0;
 }
