@@ -2,10 +2,10 @@
 using namespace std;
 
 int add(){
-    int num1, num2;
+    int num1, num2,num3;
     cout << "Enter the numbers to add : ";
-    cin >> num1 >> num2;
-    int sum = num1 + num2;
+    cin >> num1 >> num2>>num3;
+    int sum = num1 + num2+num3;
     return sum;
 }
 
