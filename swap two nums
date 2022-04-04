@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+
+
+int main(){
+    int a, b,c;
+    cout << "Enter the two numbers : " << endl;
+    cin >> a >> b;
+    cout << "The numbers before swapping is : " <<a<<" "<<b <<endl;
+
+    c = a;
+    a = b;
+    b = c;
+    cout << "The numbers after swapping is : " <<a<<" "<<b <<endl;
+
+    return 0;
+}
