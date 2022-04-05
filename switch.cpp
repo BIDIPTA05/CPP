@@ -3,8 +3,7 @@ using namespace std;
 int main()
 {
     int a, b, c;
-    cout << "--------Welcome to the Calculation--------" << endl;
-    
+    cout << "--------Welcome to the Calculation--------" << endl;   
     cout << "Addition" << endl;
     cout << "1. Addition" << endl;
     cout << "2. Substraction" << endl;
