@@ -1,0 +1,25 @@
+#include<iostream>
+#include<deque>
+using namespace std;
+
+int main(){
+
+deque<int> d;
+d.push_back(11);
+d.push_back(22);
+d.push_back(33);
+d.push_back(44);
+d.push_back(55);
+d.push_front(1);
+d.push_front(2);
+d.push_front(3);
+for(int i : d){
+cout << i << " ";
+}
+cout << endl;
+cout<<d.at(0)<<endl;
+cout<<d.at(1)<<endl;
+cout << d.size();
+
+return 0;
+}
