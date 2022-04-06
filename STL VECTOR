@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    // vector datatype vectorname;
+    vector<int> a;
+
+    a.push_back(50);
+    a.push_back(100);
+    a.push_back(150);
+    a.push_back(200);
+    a.push_back(250);
+    a.push_back(300);
+    a.push_back(350);
+    a.push_back(400);
+    a.push_back(450);
+    a.push_back(500);
+    a.push_back(750);
+    //SIZE OF THE ARRAY.
+    cout << a.size()<<endl;
+    //CAPACITY OF THE ARRAY.
+    cout << a.capacity()<<endl;
+    //FIRST ELEMENT OF THE ARRAY
+    cout << a.front()<<endl;
+    //FIRST ELEMENT OF THE ARRAY
+    cout << a.back()<<endl;
+    //PUSHING AN ELEMENT TO THE ARRAY
+    a.push_back(800);
+    cout << a.back()<<endl;
+    //REMOVING AN ELEMENT
+    a.pop_back();
+    cout << a.back()<<endl; 
+    return 0;
+}
