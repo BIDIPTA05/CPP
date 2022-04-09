@@ -1,0 +1,30 @@
+#include <iostream>
+#include <list>
+using namespace std;
+int main()
+{
+    list<int> l;
+    list<int> n(10, 50);
+    cout << n.size();
+    cout << endl;
+    for (int i : n)
+    {
+        cout << i << " ";
+    }
+    l.push_back(10);
+    l.push_back(20);
+    l.push_back(30);
+    l.push_back(40);
+    l.push_back(50);
+    l.push_back(60);
+    cout << endl;
+    l.erase(l.begin());
+
+    for (int i : l)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+    cout << l.size();
+    return 0;
+}
