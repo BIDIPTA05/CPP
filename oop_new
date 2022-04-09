@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+class student
+{
+protected:
+    string name;
+    int roll_no;
+    int age;
+    int class_id;
+    string subject;
+    // definining  methods- getter and setter
+    int getClass()
+    {
+        return age;
+    }
+    int setClass(int h){
+        age = h;
+    }
+};
+
+int main()
+{
+    student s1;
+    s1.name = "Bidipta Saikia";
+    s1.roll_no = 190102006;
+    s1.class_id = 100585;
+    s1.subject = "Computer Science";
+    //giving iput to the function age 
+    s1.setClass(22);
+    cout << s1.getClass()<<endl;
+
+    cout<< "Info of Student 1: " << endl;
+    cout << s1.name << endl;
+    cout << s1.roll_no << endl;
+    cout << s1.class_id << endl;
+    cout << s1.subject << endl;
+ 
+
+    student s2;
+    s2.name = "Ship Code";
+    s2.roll_no = 190100585;
+    s2.class_id = 200989;
+    s2.subject = "SDE";
+    cout << endl;
+    cout << "Info of Student 2: " << endl;
+    cout << s2.name << endl;
+    cout << s2.roll_no << endl;
+    cout << s2.class_id << endl;
+    cout << s2.subject << endl;
+
+    return 0;
+}
