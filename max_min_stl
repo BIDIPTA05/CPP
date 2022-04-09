@@ -1,0 +1,54 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+int main()
+{
+    // max min
+    vector<int> a;
+       a.push_back(1);
+    a.push_back(2);
+    a.push_back(4);
+    a.push_back(5);
+    a.push_back(7);
+    a.push_back(8);
+    a.push_back(15);
+
+
+    int x = 10;
+    int y = 20;
+
+    cout << "Max is-->" << max(x, y) << endl;
+
+    cout << "Min is-->" << min(x, y)<<endl;
+
+
+    //swapping
+    cout << "value before swap-->"<<x<<" "<<y<<endl;
+        swap(x,y);
+        cout << "value after swap-->"<<x<<" "<<y<<endl;
+
+
+        //reverse an string
+        
+        string ab = "bidipta";
+        reverse(ab.begin(), ab.end());
+        cout << ab<<endl;
+
+
+        //rotate(sending to back)- starting element , no of element from begging to rotate,end
+        rotate(a.begin(), a.begin() + 3, a.end());
+        cout << "after rotate " << endl;
+        for(int i:a){
+            cout << i << " ";
+        }
+
+//sorting
+
+        sort(a.begin(), a.end());
+          cout << "sorted array" << endl;
+        for(int i:a){
+            cout << i << " ";
+        }
+        return 0;
+}
