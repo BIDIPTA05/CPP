@@ -1,0 +1,24 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+int main()
+{
+    //applied binary search.
+    vector<int> a;
+    a.push_back(1);
+    a.push_back(2);
+    a.push_back(4);
+    a.push_back(5);
+    a.push_back(7);
+    a.push_back(8);
+    a.push_back(15);
+    a.push_back(18);
+    a.push_back(25);
+    a.push_back(35);
+    a.push_back(50);
+
+    int v = binary_search(a.begin(), a.end(), 7);
+    cout << "Finding 7--->"<<v;
+    return 0;
+}
