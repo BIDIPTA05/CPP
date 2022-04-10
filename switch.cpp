@@ -12,6 +12,7 @@ int main()
     cout << "5. Square of the Number"<<endl;
     cout << "6. Exit the Calculator"<<endl<<endl;
     cout << "-:Select the  Operation to perform :-" << endl;
+ 
     
     cin >> a;
 
