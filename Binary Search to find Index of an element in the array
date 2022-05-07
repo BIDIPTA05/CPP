@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int binarySearch(int arr[], int size, int key) {
 
     int start = 0;
@@ -36,7 +35,7 @@ int main() {
 
     int evenIndex = binarySearch(even, 6, 12);
 
-    cout << " Index of 12 is " << evenIndex << endl;
+    cout << " Index of 12 is :- " << evenIndex << endl;
 
     int oddIndex = binarySearch(odd, 5, 14);
 
